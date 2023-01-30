@@ -26,12 +26,38 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-fontsize);
   font-weight: var(--fw-500);
+  background-color: var(--LightGrayishBlue);
+  color: var(--DesaturatedDarkBlue);
 }
 
 /* ==============================
 Layout
 ============================== */
 
+main {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 /* ================================
-   Typography
+   V spacing
    ================================ */
+
+.wrapper-card {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card-title {
+  margin-bottom: 1.125rem;
+}
+
+.card-text {
+  margin-bottom: 2.75rem;
+}
+
+.card-avatar {
+  margin-bottom: 1.75rem;
+}
