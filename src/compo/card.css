@@ -78,22 +78,35 @@
 
 @media (min-width: 1024px) {
   .wrapper-card {
-    max-width: 1024px;
+    max-width: 900px;
     width: 80%;
 
     flex-direction: row;
+    align-items: stretch;
   }
 
   .card-img {
     width: 40%;
+    display: flex;
+    align-items: stretch;
   }
 
   .card-img img {
     aspect-ratio: unset;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: 0 0;
   }
 
   .card-body {
     width: 60%;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .card-text {
+    line-height: 1.6;
   }
 }
