@@ -21,17 +21,15 @@ export const Card = () => {
               I’ve got some simple tips to help you make any room feel complete.
             </p>
 
-            <div className="card-profile">
-              <div className="avatar">
-                <img src={Avatar} alt="Avatar of Michelle" />
-                <div className="avatar-info">
-                  <h2 className="avatar-name">Michelle Appleton</h2>
-                  <p className="date">30 Jan 2023</p>
-                  <a href="#" aria-label="Share on social networks">
-                    <img src={Share} alt="" />
-                  </a>
-                </div>
+            <div className="card-avatar">
+              <img className="avatar-img" src={Avatar} alt="Avatar of Michelle" />
+              <div className="avatar-info">
+                <h2 className="avatar-name">Michelle Appleton</h2>
+                <p className="date">30 Jan 2023</p>
               </div>
+              <a className="share-icon" href="#" aria-label="Share on social networks">
+                <img src={Share} alt="" />
+              </a>
             </div>
           </div>
         </div>
