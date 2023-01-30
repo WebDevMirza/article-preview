@@ -55,6 +55,14 @@
   margin-right: 0.5rem;
 }
 
+.lay {
+  background-color: var(--DesaturatedDarkBlue);
+}
+
+.lay img {
+  filter: brightness(500%);
+}
+
 /* =================================
     Typography 
    ===============================*/

@@ -8,12 +8,15 @@ import { useEffect, useRef, useState } from "react";
 export const Card = () => {
   const [toggle, setToggle] = useState(false);
   const loadinganime = useRef();
+  const lay = useRef();
 
   useEffect(() => {
     if (toggle) {
       loadinganime.current.classList.add("anime");
+      lay.current.classList.add("lay");
     } else {
       loadinganime.current.classList.remove("anime");
+      lay.current.classList.remove("lay");
     }
   }, [toggle]);
 
@@ -44,7 +47,9 @@ export const Card = () => {
                 onClick={() => {
                   setToggle(!toggle);
                 }}
+                ref={lay}
                 role="button"
+                tabIndex={1}
                 className="share-icon"
                 href="#"
                 aria-label="Share on social networks"
