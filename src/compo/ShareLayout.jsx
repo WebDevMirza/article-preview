@@ -1,0 +1,32 @@
+import "./sharelayout.css";
+import Facebook from "../assets/images/icon-facebook.svg";
+import Twitter from "../assets/images/icon-twitter.svg";
+import Pinterest from "../assets/images/icon-pinterest.svg";
+
+export const ShareLayout = () => {
+  console.log("layout");
+  return (
+    <>
+      <div className="share-layout">
+        <ul className="share-box">
+          <li>Share</li>
+          <li>
+            <a href="#" aria-label="visit our facebook">
+              <img src={Facebook} alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="visit our twitter">
+              <img src={Twitter} alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="visit our pinterest">
+              <img src={Pinterest} alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+};

@@ -2,8 +2,21 @@ import "./card.css";
 import Drawers from "../assets/images/drawers.jpg";
 import Avatar from "../assets/images/avatar-michelle.jpg";
 import Share from "../assets/images/icon-share.svg";
+import { ShareLayout } from "./ShareLayout";
+import { useEffect, useRef, useState } from "react";
 
 export const Card = () => {
+  const [toggle, setToggle] = useState(false);
+  const loadinganime = useRef();
+
+  useEffect(() => {
+    if (toggle) {
+      loadinganime.current.classList.add("anime");
+    } else {
+      loadinganime.current.classList.remove("anime");
+    }
+  }, [toggle]);
+
   return (
     <>
       <main>
@@ -27,10 +40,21 @@ export const Card = () => {
                 <h2 className="avatar-name">Michelle Appleton</h2>
                 <p className="date">30 Jan 2023</p>
               </div>
-              <a className="share-icon" href="#" aria-label="Share on social networks">
+              <div
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+                role="button"
+                className="share-icon"
+                href="#"
+                aria-label="Share on social networks"
+              >
                 <img src={Share} alt="" />
-              </a>
+              </div>
             </div>
+          </div>
+          <div ref={loadinganime} className="layout">
+            {toggle && <ShareLayout />}
           </div>
         </div>
       </main>

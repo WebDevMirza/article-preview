@@ -50,6 +50,10 @@ main {
   margin-bottom: 4rem;
 }
 
+.card-img {
+  margin-bottom: 1.25rem;
+}
+
 .card-title {
   margin-bottom: 1.125rem;
 }
@@ -59,7 +63,7 @@ main {
 }
 
 .card-avatar {
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 1024px) {
