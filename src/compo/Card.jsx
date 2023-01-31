@@ -57,14 +57,19 @@ export const Card = () => {
               >
                 <img src={Share} alt="" />
               </div>
-              <div ref={loadinganime} className="loadinganime-desktop">
-                {toggle && <ShareLayoutDesktop />}
-              </div>
+              {window.matchMedia("(min-width: 1024px)").matches && (
+                <div ref={loadinganime} className="loadinganime-desktop">
+                  {toggle && <ShareLayoutDesktop />}
+                </div>
+              )}
             </div>
           </div>
-          {/* <div ref={loadinganime} className="layout">
-            {toggle && <ShareLayout />}
-          </div> */}
+
+          {window.matchMedia("(max-width: 1024px)").matches && (
+            <div ref={loadinganime} className="layout">
+              {toggle && <ShareLayout />}
+            </div>
+          )}
         </div>
       </main>
     </>
