@@ -10,3 +10,8 @@ function App() {
 }
 
 export default App;
+
+// TODO:
+
+// 1. Click anywhere accept overlay to disappear overlay
+// 2. Add box shadow

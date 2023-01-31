@@ -70,4 +70,12 @@ main {
   .card-body {
     margin-top: 1rem;
   }
+
+  .card-img {
+    margin-bottom: 0;
+  }
+
+  .card-avatar {
+    margin-bottom: 1.75rem;
+  }
 }

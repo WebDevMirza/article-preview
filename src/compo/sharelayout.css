@@ -26,3 +26,45 @@
 .share-box > * + * {
   margin-left: 1.5rem;
 }
+
+/* =============================== 
+   Desktop 
+   ================================*/
+.loadinganime-desktop {
+  position: relative;
+  /* it is needed to apply z-index on parrent */
+  z-index: 1;
+}
+
+.share-box-desktop-wrapper {
+  position: absolute;
+  left: -185px;
+  top: -110px;
+  width: 300px;
+}
+
+.share-box-desktop-wrapper::before {
+  position: absolute;
+  content: "";
+  background-color: var(--VeryDarkGrayishBlue);
+  width: 40px;
+  height: 40px;
+  top: 40px;
+  left: 150px;
+  rotate: 45deg;
+  transform: translateX(-50%);
+  /* As I use z-index on its parrent */
+  z-index: -1;
+}
+
+.share-box-desktop {
+  background-color: var(--VeryDarkGrayishBlue);
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 2rem;
+  border-radius: 0.75rem;
+}
+
+.share-box-desktop > * + * {
+  margin-left: 2rem;
+}

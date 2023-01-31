@@ -4,6 +4,7 @@ import Avatar from "../assets/images/avatar-michelle.jpg";
 import Share from "../assets/images/icon-share.svg";
 import { ShareLayout } from "./ShareLayout";
 import { useEffect, useRef, useState } from "react";
+import { ShareLayoutDesktop } from "./ShareLayoutDesktop";
 
 export const Card = () => {
   const [toggle, setToggle] = useState(false);
@@ -12,11 +13,11 @@ export const Card = () => {
 
   useEffect(() => {
     if (toggle) {
-      loadinganime.current.classList.add("anime");
-      lay.current.classList.add("lay");
+      loadinganime.current?.classList.add("anime");
+      lay.current?.classList.add("lay");
     } else {
-      loadinganime.current.classList.remove("anime");
-      lay.current.classList.remove("lay");
+      loadinganime.current?.classList.remove("anime");
+      lay.current?.classList.remove("lay");
     }
   }, [toggle]);
 
@@ -56,11 +57,14 @@ export const Card = () => {
               >
                 <img src={Share} alt="" />
               </div>
+              <div ref={loadinganime} className="loadinganime-desktop">
+                {toggle && <ShareLayoutDesktop />}
+              </div>
             </div>
           </div>
-          <div ref={loadinganime} className="layout">
+          {/* <div ref={loadinganime} className="layout">
             {toggle && <ShareLayout />}
-          </div>
+          </div> */}
         </div>
       </main>
     </>

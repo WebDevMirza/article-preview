@@ -1,13 +1,11 @@
-import "./sharelayout.css";
 import Facebook from "../assets/images/icon-facebook.svg";
 import Twitter from "../assets/images/icon-twitter.svg";
 import Pinterest from "../assets/images/icon-pinterest.svg";
-
-export const ShareLayout = () => {
+export const ShareLayoutDesktop = () => {
   return (
     <>
-      <div className="share-layout">
-        <ul className="share-box">
+      <div className="share-box-desktop-wrapper">
+        <ul className="share-box-desktop">
           <li>Share</li>
           <li>
             <a href="#" aria-label="visit our facebook">
