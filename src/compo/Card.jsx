@@ -21,9 +21,13 @@ export const Card = () => {
     }
   }, [toggle]);
 
+  function disappearLayout() {
+    toggle && setToggle(false);
+  }
+
   return (
     <>
-      <main>
+      <main onClick={disappearLayout}>
         <div className="wrapper-card">
           <div className="card-img">
             <img src={Drawers} alt="A picture of drawers" />
