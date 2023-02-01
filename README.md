@@ -9,6 +9,12 @@ Challenge No: 17 - [Article preview component challenge on Frontend Mentor](http
 
 ## Screenshot
 
+### Desktop
+
+![](./lg.gif)
+
+### Mobile
+
 ![](./sm.gif)
 
 ## Author
