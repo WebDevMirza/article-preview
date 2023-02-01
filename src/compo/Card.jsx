@@ -30,7 +30,7 @@ export const Card = () => {
       <main onClick={disappearLayout}>
         <div className="wrapper-card">
           <div className="card-img">
-            <img src={Drawers} alt="A picture of drawers" />
+            <img src={Drawers} alt="A picture of drawers" height={211} width={375} />
           </div>
 
           <div className="card-body">
