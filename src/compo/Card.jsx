@@ -1,5 +1,5 @@
 import "./card.css";
-import Drawers from "../assets/images/drawers.jpg";
+import Drawers from "../assets/images/drawers.webp";
 import Avatar from "../assets/images/avatar-michelle.jpg";
 import Share from "../assets/images/icon-share.svg";
 import { ShareLayout } from "./ShareLayout";
@@ -43,24 +43,24 @@ export const Card = () => {
             </p>
 
             <div className="card-avatar">
-              <img className="avatar-img" src={Avatar} alt="Avatar of Michelle" />
+              <img className="avatar-img" src={Avatar} alt="Avatar of Michelle" width={60} height={60} />
               <div className="avatar-info">
                 <h2 className="avatar-name">Michelle Appleton</h2>
                 <p className="date">30 Jan 2023</p>
               </div>
-              <div
+              <a
                 onClick={() => {
                   setToggle(!toggle);
                 }}
                 ref={lay}
                 role="button"
-                tabIndex={1}
+                tabIndex={0}
                 className="share-icon"
                 href="#"
                 aria-label="Share on social networks"
               >
-                <img src={Share} alt="" />
-              </div>
+                <img src={Share} alt="" width={15} height={13} />
+              </a>
               {window.matchMedia("(min-width: 1024px)").matches && (
                 <div ref={loadinganime} className="loadinganime-desktop">
                   {toggle && <ShareLayoutDesktop />}
